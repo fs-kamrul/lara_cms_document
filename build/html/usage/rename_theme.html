@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rename theme &mdash; Laravel ERP 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Analytics" href="analytics.html" />
+    <link rel="prev" title="Setup Cache Commands" href="cache_commands.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Laravel ERP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Prologue:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prologue/release.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/SSL.html">SSL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Usage:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SiteSetting.html">Site Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="email.html">Setup Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backups.html">Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cache_commands.html">Setup Cache Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rename theme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-rename-theme">Using Rename theme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#change-theme-s-name-directly">1. Change theme’s name directly.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-public-theme-name-only">2. Change public theme name only</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Laravel ERP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Rename theme</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/usage/rename_theme.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rename-theme">
+<h1>Rename theme<a class="headerlink" href="#rename-theme" title="Permalink to this headline"></a></h1>
+<p>Sometimes, you want to rename our existing theme to hide info from us or just
+want to customize our theme and prevent losing your changes when upgrading to the new version.</p>
+<img alt="../_images/theme.png" src="../_images/theme.png" />
+<section id="using-rename-theme">
+<h2>Using Rename theme<a class="headerlink" href="#using-rename-theme" title="Permalink to this headline"></a></h2>
+<p>There are some ways to change it:</p>
+<section id="change-theme-s-name-directly">
+<h3>1. Change theme’s name directly.<a class="headerlink" href="#change-theme-s-name-directly" title="Permalink to this headline"></a></h3>
+<p>By this way, you can’t upgrade theme source code in <code class="docutils literal notranslate"><span class="pre">themes</span></code> anymore,
+you will need to handle it by yourself.</p>
+<p><strong>1.1 Using command line</strong></p>
+<p>If you can run command line. It’s so easy to do.</p>
+<ul class="simple">
+<li><p>Delete folder /vendor and run composer install to re-install vendor packages.</p></li>
+<li><p>Run command:</p></li>
+</ul>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">php</span> <span class="nx">artisan</span> <span class="nx">kamrul</span><span class="o">:</span><span class="nx">theme</span><span class="o">:</span><span class="nb">rename</span> <span class="p">[</span><span class="nb">current</span><span class="o">-</span><span class="nx">name</span><span class="p">]</span> <span class="p">[</span><span class="k">new</span><span class="o">-</span><span class="nx">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Ex:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">php</span> <span class="nx">artisan</span> <span class="nx">kamrul</span><span class="o">:</span><span class="nx">theme</span><span class="o">:</span><span class="nb">rename</span> <span class="nx">my</span> <span class="nx">shop</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Change your theme info in <code class="docutils literal notranslate"><span class="pre">themes/[new-name]/theme.json</span></code>.</p></li>
+</ul>
+</section>
+<section id="change-public-theme-name-only">
+<h3>2. Change public theme name only<a class="headerlink" href="#change-public-theme-name-only" title="Permalink to this headline"></a></h3>
+<p>By this way, you still keep update from us, it just changes theme
+info in public places, theme in <code class="docutils literal notranslate"><span class="pre">themes/[current-theme-name]</span></code> still be
+updated when upgrading using System Updater.</p>
+<ul class="simple">
+<li><p>Rename folder <code class="docutils literal notranslate"><span class="pre">public/[current-theme-name]</span></code> to <code class="docutils literal notranslate"><span class="pre">public/[new-name]</span></code>.</p></li>
+<li><p>Add to .env</p></li>
+</ul>
+<p>KAMRUL_THEME_PUBLIC_NAME=new-name
+Copy file <code class="docutils literal notranslate"><span class="pre">themes/[current-theme-name]/theme.json</span></code> to <code class="docutils literal notranslate"><span class="pre">public/[new-name]/theme.json</span></code> then
+change to your theme info.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="cache_commands.html" class="btn btn-neutral float-left" title="Setup Cache Commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="analytics.html" class="btn btn-neutral float-right" title="Analytics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kamrul Islam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

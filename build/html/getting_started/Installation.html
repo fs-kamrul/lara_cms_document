@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; Laravel ERP 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SSL" href="SSL.html" />
+    <link rel="prev" title="Release Notes" href="../prologue/release.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Laravel ERP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Prologue:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prologue/release.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirement">Requirement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#php-configuration">PHP Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-on-hosting">Install on hosting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-locally-or-in-vps">Install locally or in VPS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SSL.html">SSL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Usage:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/SiteSetting.html">Site Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/email.html">Setup Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/plugins.html">plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/backups.html">Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/cache_commands.html">Setup Cache Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/rename_theme.html">Rename theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/analytics.html">Analytics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Laravel ERP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting_started/Installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p><a class="reference internal" href="#hwrequirement"><span class="std std-ref">#Requirement</span></a></p>
+<p><a class="reference internal" href="#hwinstallation"><span class="std std-ref">#Installation</span></a></p>
+<p><a class="reference internal" href="#hwinstallhosting"><span class="std std-ref">#Install on Hosting</span></a></p>
+<p><a class="reference internal" href="#hwlocallyvps"><span class="std std-ref">#Install locally or in VPS</span></a></p>
+</section>
+<section id="requirement">
+<span id="hwrequirement"></span><h2>Requirement<a class="headerlink" href="#requirement" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Apache, nginx, or another compatible web server.</p></li>
+<li><p>PHP &gt;= 8.0 &gt;&gt; Higher</p></li>
+<li><p>MySQL Database server</p></li>
+<li><p>BCMath PHP Extension</p></li>
+<li><p>Ctype PHP Extension</p></li>
+<li><p>Fileinfo PHP extension</p></li>
+<li><p>JSON PHP Extension</p></li>
+<li><p>Mbstring PHP Extension</p></li>
+<li><p>OpenSSL PHP Extension</p></li>
+<li><p>PDO PHP Extension</p></li>
+<li><p>Tokenizer PHP Extension</p></li>
+<li><p>XML PHP Extension</p></li>
+<li><p>Module Re_write server</p></li>
+<li><p>PHP_CURL Module Enable</p></li>
+</ul>
+</section>
+<section id="php-configuration">
+<span id="hwinstallation"></span><h2>PHP Configuration<a class="headerlink" href="#php-configuration" title="Permalink to this headline"></a></h2>
+<p>Open your php configuration file php.ini and change the following settings.</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span> <span class="nx">memory_limit</span> <span class="o">=</span> <span class="mi">64</span><span class="nx">M</span>
+<span class="linenos">2</span> <span class="nx">max_execution_time</span> <span class="o">=</span> <span class="mi">300</span>
+</pre></div>
+</div>
+<p>If you are using Cpanel, you can follow this article to change your PHP memory limit settings
+<a class="reference external" href="https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cpanel/">https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cpanel/</a></p>
+<p><cite>Laravel documentation page &lt;https://www.laravel.com/docs/&gt;</cite></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On this project, we’re using the latest Laravel version (currently 8.x).
+Please go to <cite>Laravel documentation page &lt;https://www.laravel.com/docs/&gt;</cite> for more information.</p>
+<p>It’s based on Laravel framework, the root folder for it is /public.
+You shouldn’t install it on a sub-folder, use sub-domain is better than sub-folder. (we won’t support to install our product on sub-folder).</p>
+</div>
+</section>
+<section id="install-on-hosting">
+<span id="hwinstallhosting"></span><h2>Install on hosting<a class="headerlink" href="#install-on-hosting" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you’re a Laravel developer and you want to customize our source code
+in <code class="docutils literal notranslate"><span class="pre">Module</span></code> and <code class="docutils literal notranslate"><span class="pre">themes</span></code>, you need to delete folder /vendor then
+run command <code class="docutils literal notranslate"><span class="pre">composer</span> <span class="pre">install</span></code> to reinstall vendor packages.</p>
+</div>
+<ul class="simple">
+<li><p>Upload all files into the root folder of your hosting (normally, it is <code class="docutils literal notranslate"><span class="pre">public_html</span></code>).</p></li>
+<li><p>Create a database and import data from <code class="docutils literal notranslate"><span class="pre">database.sql</span></code> (it’s located in source code). Database</p></li>
+<li><p>Update your database credentials and <code class="docutils literal notranslate"><span class="pre">APP_URL</span></code> in <code class="docutils literal notranslate"><span class="pre">.env</span></code></p></li>
+</ul>
+<img alt="../_images/database.png" src="../_images/database.png" />
+<ul class="simple">
+<li><p>Go to /admin to access to admin panel.</p></li>
+<li><p>The default admin account is <code class="docutils literal notranslate"><span class="pre">kamrul&#64;gmail.com</span></code> - <code class="docutils literal notranslate"><span class="pre">12345678</span></code>.</p></li>
+</ul>
+</section>
+<section id="install-locally-or-in-vps">
+<span id="hwlocallyvps"></span><h2>Install locally or in VPS<a class="headerlink" href="#install-locally-or-in-vps" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you’re a Laravel developer and you want to customize our source code
+in <code class="docutils literal notranslate"><span class="pre">Module</span></code> and <code class="docutils literal notranslate"><span class="pre">themes</span></code>, you need to delete folder /vendor then
+run command <code class="docutils literal notranslate"><span class="pre">composer</span> <span class="pre">install</span></code> to reinstall vendor packages.</p>
+</div>
+<ul class="simple">
+<li><p>Update your database credentials and APP_URL in <code class="docutils literal notranslate"><span class="pre">.env</span></code></p></li>
+</ul>
+<img alt="../_images/database.png" src="../_images/database.png" />
+<ul class="simple">
+<li><p>Using sample data:</p></li>
+<li><p>Import database from database.sql.</p></li>
+<li><dl class="simple">
+<dt>Don’t use sample data:</dt><dd><ul>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">migrate</span></code> to create database structure.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">kamul:user:create</span></code> to create admin user.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">kamul:theme:activate</span></code> stories</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>If you’re pulled source code from GIT server:</dt><dd><ul>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">vendor:publish</span> <span class="pre">--tag=kamuldashboard_public</span> <span class="pre">--force</span></code></p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">kamul:theme:assets:publish</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Run web locally:</dt><dd><ul>
+<li><p>Change <code class="docutils literal notranslate"><span class="pre">APP_URL</span></code> in .env to <code class="docutils literal notranslate"><span class="pre">APP_URL=http://localhost:8000</span></code></p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">serve</span></code>. Open <cite>http://localhost:8000`</cite>, you should see the homepage.</p></li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">/login</span></code> to access to admin panel.</p></li>
+<li><p>If you’re using sample data, the default admin account is <code class="docutils literal notranslate"><span class="pre">kamrul&#64;gmail.com</span></code> - <code class="docutils literal notranslate"><span class="pre">12345678</span></code>.</p></li>
+<li><p>If you don’t use sample data, you need to go to -&gt; Plugins then activate all plugins.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../prologue/release.html" class="btn btn-neutral float-left" title="Release Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SSL.html" class="btn btn-neutral float-right" title="SSL" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kamrul Islam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

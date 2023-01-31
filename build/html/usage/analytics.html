@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics &mdash; Laravel ERP 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Rename theme" href="rename_theme.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Laravel ERP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Prologue:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prologue/release.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/SSL.html">SSL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Usage:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SiteSetting.html">Site Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="email.html">Setup Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backups.html">Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cache_commands.html">Setup Cache Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rename_theme.html">Rename theme</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-credentials">Getting credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-google-analytic">Setting Google Analytic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-timezone-and-clear-cache">Setup timezone and clear cache</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Laravel ERP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Analytics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/usage/analytics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="analytics">
+<h1>Analytics<a class="headerlink" href="#analytics" title="Permalink to this headline"></a></h1>
+<p>Integrate with Google Analytics</p>
+<img alt="../_images/analytics.png" src="../_images/analytics.png" />
+<section id="getting-credentials">
+<h2>Getting credentials<a class="headerlink" href="#getting-credentials" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Video tutorial:</p></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe><ul class="simple">
+<li><p>Go to <a class="reference external" href="https://console.developers.google.com/apis/dashboard">https://console.developers.google.com/apis/dashboard</a> and create a new project</p></li>
+</ul>
+<img alt="../_images/analytics1.png" src="../_images/analytics1.png" />
+<img alt="../_images/analytics2.png" src="../_images/analytics2.png" />
+<img alt="../_images/analytics3.png" src="../_images/analytics3.png" />
+<ul class="simple">
+<li><p>Select your project and click on <strong>“ENABLE APIS AND SERVICES”</strong>:</p></li>
+</ul>
+<img alt="../_images/analytics4.png" src="../_images/analytics4.png" />
+<ul class="simple">
+<li><p>Enable API:</p></li>
+</ul>
+<img alt="../_images/analytics5.png" src="../_images/analytics5.png" />
+<img alt="../_images/analytics6.png" src="../_images/analytics6.png" />
+<img alt="../_images/analytics7.png" src="../_images/analytics7.png" />
+<ul class="simple">
+<li><p>Generate service account key:</p></li>
+</ul>
+<img alt="../_images/analytics8.png" src="../_images/analytics8.png" />
+<img alt="../_images/analytics9.png" src="../_images/analytics9.png" />
+<img alt="../_images/analytics10.png" src="../_images/analytics10.png" />
+<img alt="../_images/analytics11.png" src="../_images/analytics11.png" />
+<img alt="../_images/analytics12.png" src="../_images/analytics12.png" />
+<img alt="../_images/analytics13.png" src="../_images/analytics13.png" />
+<img alt="../_images/analytics14.png" src="../_images/analytics14.png" />
+<img alt="../_images/analytics15.png" src="../_images/analytics15.png" />
+<img alt="../_images/analytics16.png" src="../_images/analytics16.png" />
+<img alt="../_images/analytics17.png" src="../_images/analytics17.png" />
+<ul class="simple">
+<li><p>Open JSON file and copy its content, then go to Dashboard -&gt; Settings (/systemsettings/settings) and update field “Service Account Credentials” in Analytics plugin settings by the content from JSON file:</p></li>
+</ul>
+<img alt="../_images/analytics29.png" src="../_images/analytics29.png" />
+<p>It will look like this:</p>
+</section>
+<section id="setting-google-analytic">
+<h2>Setting Google Analytic<a class="headerlink" href="#setting-google-analytic" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Go to Google Analytics account: <a class="reference external" href="https://analytics.google.com/analytics/web/">https://analytics.google.com/analytics/web/</a>. Click on “Admin” =&gt; “View Settings” and copy “View ID” number, then go to /systemsettings/settings and tab “Google Analytics” and paste to field View ID.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: Change in Google Analytics 4 property.</p>
+</div>
+<img alt="../_images/analytics18.png" src="../_images/analytics18.png" />
+<img alt="../_images/analytics19.png" src="../_images/analytics19.png" />
+<img alt="../_images/analytics20.png" src="../_images/analytics20.png" />
+<img alt="../_images/analytics21.png" src="../_images/analytics21.png" />
+<p>When creating a new property, you need to check the “Create a Universal Analytics Property” checkbox.</p>
+<img alt="../_images/analytics22.png" src="../_images/analytics22.png" />
+<img alt="../_images/analytics23.png" src="../_images/analytics23.png" />
+<p>Then you will have view settings tab and View ID.</p>
+<img alt="../_images/analytics24.png" src="../_images/analytics24.png" />
+<p>Then you will have view settings tab and Tracking ID.</p>
+<img alt="../_images/analytics25.png" src="../_images/analytics25.png" />
+<ul class="simple">
+<li><p>Open JSON credentials file and copy client email. Then click on “User management” and add that email to list account. Just need view only permission.</p></li>
+</ul>
+<img alt="../_images/analytics27.png" src="../_images/analytics27.png" />
+<img alt="../_images/analytics28.png" src="../_images/analytics28.png" />
+</section>
+<section id="setup-timezone-and-clear-cache">
+<h2>Setup timezone and clear cache<a class="headerlink" href="#setup-timezone-and-clear-cache" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Go to Dashboard -&gt; Cache management and clear your site cache.</p></li>
+</ul>
+<img alt="../_images/cache_commands.png" src="../_images/cache_commands.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from API, not realtime analytics so please wait until your site has data from API.</p>
+</div>
+<p>Give your comment here if you got any problem.</p>
+<p>Good luck!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rename_theme.html" class="btn btn-neutral float-left" title="Rename theme" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kamrul Islam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

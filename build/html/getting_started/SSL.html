@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSL &mdash; Laravel ERP 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dashboard" href="../usage/dashboard.html" />
+    <link rel="prev" title="Installation" href="Installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Laravel ERP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Prologue:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prologue/release.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SSL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-ssl-certificate-on-your-hosting-vps">Install SSL certificate on your hosting/VPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#redirect-http-to-https">Redirect http to https</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Usage:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/SiteSetting.html">Site Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/email.html">Setup Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/plugins.html">plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/backups.html">Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/cache_commands.html">Setup Cache Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/rename_theme.html">Rename theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/analytics.html">Analytics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Laravel ERP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">SSL</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting_started/SSL.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ssl">
+<h1>SSL<a class="headerlink" href="#ssl" title="Permalink to this headline"></a></h1>
+<p><a class="reference internal" href="#hwinstallssl"><span class="std std-ref">#Install SSL certificate on your hosting/VPS</span></a></p>
+<p><a class="reference internal" href="#hwredirecthttp"><span class="std std-ref">#Redirect http to https</span></a></p>
+<section id="install-ssl-certificate-on-your-hosting-vps">
+<span id="hwinstallssl"></span><h2>Install SSL certificate on your hosting/VPS<a class="headerlink" href="#install-ssl-certificate-on-your-hosting-vps" title="Permalink to this headline"></a></h2>
+<p>You need to install an SSL certificate on your hosting/VPS first. You can purchase an SSL certificate or use free SSL, for example Let’s Encrypt.</p>
+</section>
+<section id="redirect-http-to-https">
+<span id="hwredirecthttp"></span><h2>Redirect http to https<a class="headerlink" href="#redirect-http-to-https" title="Permalink to this headline"></a></h2>
+<ul>
+<li><p>Step 1: Change in .env <code class="docutils literal notranslate"><span class="pre">APP_URL=http://domain.com</span></code> to <code class="docutils literal notranslate"><span class="pre">APP_URL=https://domain.com</span></code>.</p></li>
+<li><dl>
+<dt>Step 2:</dt><dd><ul>
+<li><p>Option 1: Add to .env ENABLE_HTTPS_SUPPORT=true.</p></li>
+<li><dl>
+<dt>Option 2: Add to .env:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">FORCE_SCHEMA=https</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">FORCE_ROOT_URL=https://domain.com</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ENABLE_HTTPS_SUPPORT=false</span></code></p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Option 3: If you are using hosting and Cpanel, you can Force HTTPS Redirection for your domains.</p></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If it doesn’t work, you have to config it in .htaccess or Nginx config.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../usage/dashboard.html" class="btn btn-neutral float-right" title="Dashboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kamrul Islam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
