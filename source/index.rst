@@ -58,6 +58,7 @@ Table of Contents
    usage/dashboard
    usage/SiteSetting
    usage/email
+   usage/post_page
    usage/plugins
    usage/backups
    usage/cache_commands

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Setup Email &mdash; Laravel ERP 1.0.0 documentation</title>
+  <title>Post and Page &mdash; Laravel ERP 1.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Post and Page" href="post_page.html" />
-    <link rel="prev" title="Site Setting" href="SiteSetting.html" /> 
+    <link rel="next" title="plugins" href="plugins.html" />
+    <link rel="prev" title="Setup Email" href="email.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -51,11 +51,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dashboard.html">Dashboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SiteSetting.html">Site Setting</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup Email</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#using-gmail">Using Gmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="email.html">Setup Email</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Post and Page</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-post-and-page">Using Post and Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#video-tutorial">Video Tutorial</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="post_page.html">Post and Page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugins.html">plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="backups.html">Backup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cache_commands.html">Setup Cache Commands</a></li>
@@ -77,9 +78,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Setup Email</li>
+      <li class="breadcrumb-item active">Post and Page</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/usage/email.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/usage/post_page.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -87,33 +88,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="setup-email">
-<h1>Setup Email<a class="headerlink" href="#setup-email" title="Permalink to this headline"></a></h1>
-<p>Need to config mail in Dashboard -&gt; Email.</p>
-<p>Support Mailgun, SendGrid, SES, Gmail, Sendmail… and other SMTP mail services. We suggest use Mailgun to send mail.</p>
-<p>Make sure that you have saved settings (button Save settings at the bottom of page) before sending a test email.</p>
-<img alt="../_images/settings.jpeg" src="../_images/settings.jpeg" />
-<section id="using-gmail">
-<h2>Using Gmail<a class="headerlink" href="#using-gmail" title="Permalink to this headline"></a></h2>
-<p>Example:</p>
-<img alt="../_images/settings_mail.jpeg" src="../_images/settings_mail.jpeg" />
-<ul class="simple">
-<li><p>Mail Driver: <code class="docutils literal notranslate"><span class="pre">SMTP</span></code></p></li>
-<li><p>Mail Host: <code class="docutils literal notranslate"><span class="pre">smtp.gmail.com</span></code></p></li>
-<li><p>Mail Port: <code class="docutils literal notranslate"><span class="pre">587</span></code></p></li>
-<li><p>Mail Encryption: <code class="docutils literal notranslate"><span class="pre">tls</span></code></p></li>
-<li><p>Mail Username: <code class="docutils literal notranslate"><span class="pre">[your-gmail]</span></code></p></li>
-<li><p>Mail Password: <code class="docutils literal notranslate"><span class="pre">[password-app]</span></code> (docs: <a class="reference external" href="https://support.google.com/mail/answer/185833?hl=en-GB">https://support.google.com/mail/answer/185833?hl=en-GB</a> )</p></li>
-</ul>
+  <section id="post-and-page">
+<h1>Post and Page<a class="headerlink" href="#post-and-page" title="Permalink to this headline"></a></h1>
+<p>Need to config in Dashboard -&gt; Post.</p>
+<section id="using-post-and-page">
+<h2>Using Post and Page<a class="headerlink" href="#using-post-and-page" title="Permalink to this headline"></a></h2>
+<p>Example Post:</p>
+<img alt="../_images/post.png" src="../_images/post.png" />
+<p>Example Page:</p>
+<img alt="../_images/page.png" src="../_images/page.png" />
 </section>
+<section id="video-tutorial">
+<h2>Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permalink to this headline"></a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YDv5MVLQ3tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="SiteSetting.html" class="btn btn-neutral float-left" title="Site Setting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="post_page.html" class="btn btn-neutral float-right" title="Post and Page" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="email.html" class="btn btn-neutral float-left" title="Setup Email" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plugins.html" class="btn btn-neutral float-right" title="plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

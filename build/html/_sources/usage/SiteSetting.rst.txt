@@ -2,7 +2,7 @@
 Site Setting
 ############
 
-Need to config mail in Dashboard -> Settings -> Site Setting.
+Need to config in Dashboard -> Settings -> Site Setting.
 
 
 
